@@ -1,0 +1,6 @@
+framework module AAImagePicker {
+  umbrella header "AAImagePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

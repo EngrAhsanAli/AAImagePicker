@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DD50A000289253A9F3E6021F2266EF9 /* Pods-AAImagePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F84E376CAFE6AB8AF7FA24EA51B70914 /* Pods-AAImagePicker_Example-dummy.m */; };
+		3262082A65D5A99DCC7A00FA8191F300 /* Pods-AAImagePicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42CD36030D8FE90D0127180583D3B3E6 /* Pods-AAImagePicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43BBED5FC597884B6EB0360D33FEB55B /* AAImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC06E030AB870B419759269B8126DD19 /* AAImagePicker.swift */; };
+		5DA36E8FFC7210C800E2A2DDEFEA6ED1 /* AAImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 384095544AF2AED09EF5DAE60BF3DBD1 /* AAImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ABA546357221A02D930541117A79C9D /* AAImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49253D4FC9FED14BA2CF176CCCEED513 /* AAImagePicker-dummy.m */; };
+		AC197AC1E7AE9C5640EA898E02EB6D14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C5445B57606B69D7A05898B476D1CE36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B119555ECA25ACEF0A7E49209DD4EEC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38B37A4F6B93E4698F45C8970A059BB5;
+			remoteInfo = AAImagePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1232C0FBDBE8803C4CCAC1C747CB34F9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17AADED11E4FB50E5DC9BACF0A0794C6 /* AAImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AAImagePicker.modulemap; sourceTree = "<group>"; };
+		1AAE493806767DC6480B4785D969B16D /* AAImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20C7C5864A521868BC05A9202311EF81 /* Pods-AAImagePicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAImagePicker_Example-resources.sh"; sourceTree = "<group>"; };
+		22F833D9255C56F85E8E66F6215B817D /* Pods-AAImagePicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AAImagePicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		384095544AF2AED09EF5DAE60BF3DBD1 /* AAImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAImagePicker-umbrella.h"; sourceTree = "<group>"; };
+		3CFE778ECD799049114ADAA9DF6F861F /* AAImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AAImagePicker.xcconfig; sourceTree = "<group>"; };
+		3E9460EE44AA81AB793D35EC9205CA36 /* Pods-AAImagePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAImagePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		42CD36030D8FE90D0127180583D3B3E6 /* Pods-AAImagePicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAImagePicker_Example-umbrella.h"; sourceTree = "<group>"; };
+		4533605002DB12AE22A5D4C28F17CB38 /* Pods-AAImagePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAImagePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		49253D4FC9FED14BA2CF176CCCEED513 /* AAImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AAImagePicker-dummy.m"; sourceTree = "<group>"; };
+		6FD5E3074C65DE9805EC153C7832A13C /* Pods-AAImagePicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AAImagePicker_Example.modulemap"; sourceTree = "<group>"; };
+		7250FD9B93ECC11726CBB44170DEB0EE /* Pods-AAImagePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAImagePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		792DD1B6F632E690C04A300F93A50B72 /* Pods-AAImagePicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AAImagePicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		832A4E805943B1CC962D0BE905B22C72 /* AAImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A209C82D7E4D5B13176F83B84FAB846A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC06E030AB870B419759269B8126DD19 /* AAImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AAImagePicker.swift; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D102272AF69CFA8D9B649E0D283480AA /* Pods_AAImagePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AAImagePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84E376CAFE6AB8AF7FA24EA51B70914 /* Pods-AAImagePicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AAImagePicker_Example-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF0BBE6461AC1E60C1694E788BA5D9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC197AC1E7AE9C5640EA898E02EB6D14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCA94E250850700A89946D186F2BBA1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5445B57606B69D7A05898B476D1CE36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02E63F4767E4B2498D7C50A4236E5657 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFC22802963052C9CEEDE63C49AE4A80 /* Pods-AAImagePicker_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1B421309BDBE12D0DC0C600578055483 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AAE493806767DC6480B4785D969B16D /* AAImagePicker.framework */,
+				D102272AF69CFA8D9B649E0D283480AA /* Pods_AAImagePicker_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68290B88058F432AABE841878D77F2A7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC06E030AB870B419759269B8126DD19 /* AAImagePicker.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D402B95953F654A2C9CAA7774F1B94E3 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				1B421309BDBE12D0DC0C600578055483 /* Products */,
+				02E63F4767E4B2498D7C50A4236E5657 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		97D6A2BFEE769A9C70D799E46D47D49F /* AAImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A902801F2C0CB4F504A1F4D23B944D68 /* AAImagePicker */,
+				CE606E2C06D9F12FD6B48E3667C9CA5B /* Support Files */,
+			);
+			name = AAImagePicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A902801F2C0CB4F504A1F4D23B944D68 /* AAImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				68290B88058F432AABE841878D77F2A7 /* Classes */,
+			);
+			path = AAImagePicker;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE606E2C06D9F12FD6B48E3667C9CA5B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				17AADED11E4FB50E5DC9BACF0A0794C6 /* AAImagePicker.modulemap */,
+				3CFE778ECD799049114ADAA9DF6F861F /* AAImagePicker.xcconfig */,
+				49253D4FC9FED14BA2CF176CCCEED513 /* AAImagePicker-dummy.m */,
+				832A4E805943B1CC962D0BE905B22C72 /* AAImagePicker-prefix.pch */,
+				384095544AF2AED09EF5DAE60BF3DBD1 /* AAImagePicker-umbrella.h */,
+				1232C0FBDBE8803C4CCAC1C747CB34F9 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AAImagePicker";
+			sourceTree = "<group>";
+		};
+		D402B95953F654A2C9CAA7774F1B94E3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97D6A2BFEE769A9C70D799E46D47D49F /* AAImagePicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		EFC22802963052C9CEEDE63C49AE4A80 /* Pods-AAImagePicker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A209C82D7E4D5B13176F83B84FAB846A /* Info.plist */,
+				6FD5E3074C65DE9805EC153C7832A13C /* Pods-AAImagePicker_Example.modulemap */,
+				22F833D9255C56F85E8E66F6215B817D /* Pods-AAImagePicker_Example-acknowledgements.markdown */,
+				792DD1B6F632E690C04A300F93A50B72 /* Pods-AAImagePicker_Example-acknowledgements.plist */,
+				F84E376CAFE6AB8AF7FA24EA51B70914 /* Pods-AAImagePicker_Example-dummy.m */,
+				7250FD9B93ECC11726CBB44170DEB0EE /* Pods-AAImagePicker_Example-frameworks.sh */,
+				20C7C5864A521868BC05A9202311EF81 /* Pods-AAImagePicker_Example-resources.sh */,
+				42CD36030D8FE90D0127180583D3B3E6 /* Pods-AAImagePicker_Example-umbrella.h */,
+				3E9460EE44AA81AB793D35EC9205CA36 /* Pods-AAImagePicker_Example.debug.xcconfig */,
+				4533605002DB12AE22A5D4C28F17CB38 /* Pods-AAImagePicker_Example.release.xcconfig */,
+			);
+			name = "Pods-AAImagePicker_Example";
+			path = "Target Support Files/Pods-AAImagePicker_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		156AD8B7EBED83BEFF7919DC28ED09A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA36E8FFC7210C800E2A2DDEFEA6ED1 /* AAImagePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ECA2B31EDDED9FF2422C2168856286A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3262082A65D5A99DCC7A00FA8191F300 /* Pods-AAImagePicker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		38B37A4F6B93E4698F45C8970A059BB5 /* AAImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E08B8828E21532D62D1161FC2DD19D4B /* Build configuration list for PBXNativeTarget "AAImagePicker" */;
+			buildPhases = (
+				20E7AB76BAE6FEAB89C6D6680D5CAAF2 /* Sources */,
+				AF0BBE6461AC1E60C1694E788BA5D9EF /* Frameworks */,
+				156AD8B7EBED83BEFF7919DC28ED09A2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AAImagePicker;
+			productName = AAImagePicker;
+			productReference = 1AAE493806767DC6480B4785D969B16D /* AAImagePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE5DD7C1A20F02E6F6502136630A344C /* Pods-AAImagePicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6C2BA12512A43D5F4DFF2243771F568 /* Build configuration list for PBXNativeTarget "Pods-AAImagePicker_Example" */;
+			buildPhases = (
+				DD94ACD4B4E0BB61D1C9D2FEA2E57907 /* Sources */,
+				DCA94E250850700A89946D186F2BBA1A /* Frameworks */,
+				6ECA2B31EDDED9FF2422C2168856286A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2122669C257CF7A1CD170604AC58AA35 /* PBXTargetDependency */,
+			);
+			name = "Pods-AAImagePicker_Example";
+			productName = "Pods-AAImagePicker_Example";
+			productReference = D102272AF69CFA8D9B649E0D283480AA /* Pods_AAImagePicker_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1B421309BDBE12D0DC0C600578055483 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38B37A4F6B93E4698F45C8970A059BB5 /* AAImagePicker */,
+				BE5DD7C1A20F02E6F6502136630A344C /* Pods-AAImagePicker_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20E7AB76BAE6FEAB89C6D6680D5CAAF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ABA546357221A02D930541117A79C9D /* AAImagePicker-dummy.m in Sources */,
+				43BBED5FC597884B6EB0360D33FEB55B /* AAImagePicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD94ACD4B4E0BB61D1C9D2FEA2E57907 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD50A000289253A9F3E6021F2266EF9 /* Pods-AAImagePicker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2122669C257CF7A1CD170604AC58AA35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AAImagePicker;
+			target = 38B37A4F6B93E4698F45C8970A059BB5 /* AAImagePicker */;
+			targetProxy = B119555ECA25ACEF0A7E49209DD4EEC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		80313D208335DECFE9978052DB26E11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFE778ECD799049114ADAA9DF6F861F /* AAImagePicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AAImagePicker/AAImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AAImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AAImagePicker/AAImagePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AAImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AD00ED05C9A7DF7085CFAA9BF8222C47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFE778ECD799049114ADAA9DF6F861F /* AAImagePicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AAImagePicker/AAImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AAImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AAImagePicker/AAImagePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AAImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C0AE5D2A790CF9A5F52B38F9488ECBC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4533605002DB12AE22A5D4C28F17CB38 /* Pods-AAImagePicker_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AAImagePicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AAImagePicker_Example/Pods-AAImagePicker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AAImagePicker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C620372C657BEDED1FA2B88BB94F4A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E9460EE44AA81AB793D35EC9205CA36 /* Pods-AAImagePicker_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AAImagePicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AAImagePicker_Example/Pods-AAImagePicker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AAImagePicker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6C2BA12512A43D5F4DFF2243771F568 /* Build configuration list for PBXNativeTarget "Pods-AAImagePicker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C620372C657BEDED1FA2B88BB94F4A1D /* Debug */,
+				C0AE5D2A790CF9A5F52B38F9488ECBC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E08B8828E21532D62D1161FC2DD19D4B /* Build configuration list for PBXNativeTarget "AAImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80313D208335DECFE9978052DB26E11B /* Debug */,
+				AD00ED05C9A7DF7085CFAA9BF8222C47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

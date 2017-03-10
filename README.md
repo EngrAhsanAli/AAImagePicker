@@ -100,7 +100,7 @@ $ brew install carthage
 Then add the following line to your Cartfile:
 
 ```
-github "EngrAhsanAli/AAImagePicker" 
+github "EngrAhsanAli/AAImagePicker" "master"
 ```
 
 Then import the library in all files where you use it:

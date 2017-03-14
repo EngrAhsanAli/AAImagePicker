@@ -104,7 +104,7 @@ github "EngrAhsanAli/AAImagePicker" "master"
 ```
 
 Then import the library in all files where you use it:
-```ruby
+```swift
 import AAImagePicker
 ```
 
@@ -143,7 +143,7 @@ You need to add the following in your `Info.plist` file.
 
 Create an instance by just calling the following line in your view controller.
 
-```ruby
+```swift
 let imagePicker = AAImagePicker()
 ```
 
@@ -153,7 +153,7 @@ let imagePicker = AAImagePicker()
 
 Show image picker options by just calling the following method
 
-```
+```swift
 imagePicker.present { (image) in
 // Get your image       
 }
@@ -162,7 +162,7 @@ imagePicker.present { (image) in
 
 Here's the method signature:
 
-```ruby
+```swift
 open func present(_ options: AAImagePickerOptions? = nil, _ completion: @escaping ((UIImage) -> Void))
 
 ```
@@ -175,7 +175,7 @@ open func present(_ options: AAImagePickerOptions? = nil, _ completion: @escapin
 
 You can define options in your code and pass the options to `present` function.
 
-```ruby
+```swift
 actionSheetTitle: String = "Choose Option"
 actionSheetMessage: String = "Select an option to pick an image"
 optionCamera = "Camera"

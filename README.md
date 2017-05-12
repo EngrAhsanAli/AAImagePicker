@@ -19,7 +19,7 @@
 
 <div id='section-id-4'/>
 
-#AAImagePicker
+# AAImagePicker
 
 [![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/AAImagePicker.svg)](http://cocoadocs.org/docsets/AAImagePicker) [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/EngrAhsanAli/AAImagePicker.svg?branch=master)](https://travis-ci.org/EngrAhsanAli/AAImagePicker) 
 ![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg) [![CocoaPods](https://img.shields.io/cocoapods/p/AAImagePicker.svg)]()
@@ -27,7 +27,7 @@
 
 <div id='section-id-10'/>
 
-##Description
+## Description
 
 
 AAImagePicker is a simple & easy-to-use image picker designed to present both camera and photo library options and get the UIImage easily.
@@ -35,7 +35,7 @@ AAImagePicker is a simple & easy-to-use image picker designed to present both ca
 
 <div id='section-id-16'/>
 
-##Demonstration
+## Demonstration
 
 
 
@@ -47,7 +47,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 <div id='section-id-26'/>
 
-##Requirements
+## Requirements
 
 - iOS 8.0+
 - Xcode 8.0+
@@ -62,7 +62,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 <div id='section-id-37'/>
 
-##CocoaPods
+## CocoaPods
 
 `AAImagePicker` is available through [CocoaPods](http://cocoapods.org). To install CocoaPods, run:
 
@@ -90,7 +90,7 @@ $ pod install
 
 <div id='section-id-63'/>
 
-##Carthage
+## Carthage
 
 To install Carthage, run (using Homebrew):
 ```
@@ -111,14 +111,14 @@ import AAImagePicker
 
 <div id='section-id-82'/>
 
-##Manual Installation
+## Manual Installation
 
 If you prefer not to use either of the above mentioned dependency managers, you can integrate `AAImagePicker` into your project manually by adding the files contained in the Classes folder to your project.
 
 
 <div id='section-id-87'/>
 
-#Getting Started
+# Getting Started
 ----------
 
 <div id='section-id-90'/>
@@ -139,7 +139,7 @@ You need to add the following in your `Info.plist` file.
 
 <div id='section-id-104'/>
 
-##Create instance of image picker
+## Create instance of image picker
 
 Create an instance by just calling the following line in your view controller.
 
@@ -149,7 +149,7 @@ let imagePicker = AAImagePicker()
 
 <div id='section-id-112'/>
 
-##Show image picker options
+## Show image picker options
 
 Show image picker options by just calling the following method
 
@@ -171,7 +171,7 @@ open func present(_ options: AAImagePickerOptions? = nil, _ completion: @escapin
 
 <div id='section-id-132'/>
 
-##Define options
+## Define options
 
 You can define options in your code and pass the options to `present` function.
 
@@ -191,7 +191,7 @@ resizeType: AAResizer = .none
 
 <div id='section-id-150'/>
 
-##Use AAResizer to get the resized image
+## Use AAResizer to get the resized image
 
 By defualt, it has `.none` but you can change it if you want.
 Resizing options are `.width` and `.scale` .
@@ -199,7 +199,7 @@ You can pass `resizeType` to `AAImagePickerOptions` and set the value by setting
 
 <div id='section-id-156'/>
 
-#Contributions & License
+# Contributions & License
 
 `AAImagePicker` is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.
 

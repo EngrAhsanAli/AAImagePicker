@@ -11,10 +11,14 @@ import UIKit
 
 open class AAImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    let imagePicker = UIImagePickerController()
+    public let imagePicker = UIImagePickerController()
     var options: AAImagePickerOptions = AAImagePickerOptions()
     var getImage: ((UIImage) -> Void)!
-
+    
+    var presentController : UIViewController {
+        return (options.presentController ?? rootViewController)
+    }
+    
     var rootViewController: UIViewController {
         guard let root = UIApplication.shared.keyWindow?.rootViewController else {
             fatalError("AAImagePicker - Application key window not found. Please check UIWindow in AppDelegate.")
@@ -25,6 +29,8 @@ open class AAImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigatio
         
     func setupAlertController() -> UIAlertController {
         let alertController = UIAlertController(title: options.actionSheetTitle, message: options.actionSheetMessage, preferredStyle: .actionSheet)
+        alertController.popoverPresentationController?.sourceView = presentController.view
+
         let camera = UIAlertAction(title: options.optionCamera, style: .default, handler: { _ in
             self.presentPicker(sourceType: .camera)
         })
@@ -41,25 +47,25 @@ open class AAImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigatio
         return alertController
     }
     
-    
-    func presentPicker(sourceType: UIImagePickerControllerSourceType) {
-        
-        guard UIImagePickerController.isSourceTypeAvailable(sourceType) else {
-            return
-        }
-        
+    open func setImagePickerSource(_ sourceType: UIImagePickerController.SourceType) {
+        guard UIImagePickerController.isSourceTypeAvailable(sourceType) else { return }
         imagePicker.allowsEditing = options.allowsEditing
         imagePicker.delegate = self
         imagePicker.modalPresentationStyle = .overCurrentContext
         imagePicker.sourceType = sourceType
-        self.rootViewController.present(imagePicker, animated: true, completion: nil)
     }
     
-    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
+    func presentPicker(sourceType: UIImagePickerController.SourceType) {
+        setImagePickerSource(sourceType)
+        presentController.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+
+        let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
         picker.dismiss(animated: true, completion: nil)
         
-        let imageType = options.allowsEditing ? UIImagePickerControllerEditedImage : UIImagePickerControllerOriginalImage
+        let imageType = options.allowsEditing ? convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.editedImage) : convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)
         
         var image = info[imageType] as! UIImage
         image = image.fixOrientation()
@@ -85,7 +91,7 @@ open class AAImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigatio
             self.options = pickerOptions
         }
         let alertController = setupAlertController()
-        self.rootViewController.present(alertController, animated: true, completion: nil)
+        presentController.present(alertController, animated: true, completion: nil)
         
         self.getImage = { image in
             completion(image)
@@ -102,7 +108,7 @@ extension UIImage {
     fileprivate func fixOrientation() -> UIImage {
         
         // No-op if the orientation is already correct
-        if ( self.imageOrientation == UIImageOrientation.up ) {
+        if ( self.imageOrientation == UIImage.Orientation.up ) {
             return self;
         }
         
@@ -110,27 +116,27 @@ extension UIImage {
         // We do it in 2 steps: Rotate if Left/Right/Down, and then flip if Mirrored.
         var transform: CGAffineTransform = CGAffineTransform.identity
         
-        if ( self.imageOrientation == UIImageOrientation.down || self.imageOrientation == UIImageOrientation.downMirrored ) {
+        if ( self.imageOrientation == UIImage.Orientation.down || self.imageOrientation == UIImage.Orientation.downMirrored ) {
             transform = transform.translatedBy(x: self.size.width, y: self.size.height)
-            transform = transform.rotated(by: CGFloat(M_PI))
+            transform = transform.rotated(by: CGFloat(Double.pi))
         }
         
-        if ( self.imageOrientation == UIImageOrientation.left || self.imageOrientation == UIImageOrientation.leftMirrored ) {
+        if ( self.imageOrientation == UIImage.Orientation.left || self.imageOrientation == UIImage.Orientation.leftMirrored ) {
             transform = transform.translatedBy(x: self.size.width, y: 0)
-            transform = transform.rotated(by: CGFloat(M_PI_2))
+            transform = transform.rotated(by: CGFloat(Double.pi / 2))
         }
         
-        if ( self.imageOrientation == UIImageOrientation.right || self.imageOrientation == UIImageOrientation.rightMirrored ) {
+        if ( self.imageOrientation == UIImage.Orientation.right || self.imageOrientation == UIImage.Orientation.rightMirrored ) {
             transform = transform.translatedBy(x: 0, y: self.size.height);
-            transform = transform.rotated(by: CGFloat(-M_PI_2));
+            transform = transform.rotated(by: CGFloat(-Double.pi / 2));
         }
         
-        if ( self.imageOrientation == UIImageOrientation.upMirrored || self.imageOrientation == UIImageOrientation.downMirrored ) {
+        if ( self.imageOrientation == UIImage.Orientation.upMirrored || self.imageOrientation == UIImage.Orientation.downMirrored ) {
             transform = transform.translatedBy(x: self.size.width, y: 0)
             transform = transform.scaledBy(x: -1, y: 1)
         }
         
-        if ( self.imageOrientation == UIImageOrientation.leftMirrored || self.imageOrientation == UIImageOrientation.rightMirrored ) {
+        if ( self.imageOrientation == UIImage.Orientation.leftMirrored || self.imageOrientation == UIImage.Orientation.rightMirrored ) {
             transform = transform.translatedBy(x: self.size.height, y: 0);
             transform = transform.scaledBy(x: -1, y: 1);
         }
@@ -144,10 +150,10 @@ extension UIImage {
         
         ctx.concatenate(transform)
         
-        if ( self.imageOrientation == UIImageOrientation.left ||
-            self.imageOrientation == UIImageOrientation.leftMirrored ||
-            self.imageOrientation == UIImageOrientation.right ||
-            self.imageOrientation == UIImageOrientation.rightMirrored ) {
+        if ( self.imageOrientation == UIImage.Orientation.left ||
+            self.imageOrientation == UIImage.Orientation.leftMirrored ||
+            self.imageOrientation == UIImage.Orientation.right ||
+            self.imageOrientation == UIImage.Orientation.rightMirrored ) {
             ctx.draw(self.cgImage!, in: CGRect(x: 0,y: 0,width: self.size.height,height: self.size.width))
         } else {
             ctx.draw(self.cgImage!, in: CGRect(x: 0,y: 0,width: self.size.width,height: self.size.height))
@@ -159,7 +165,7 @@ extension UIImage {
 
     fileprivate func resize(scale: CGFloat)-> UIImage {
         let imageView = UIImageView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: size.width*scale, height: size.height*scale)))
-        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        imageView.contentMode = UIView.ContentMode.scaleAspectFit
         imageView.image = self
         UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, false, scale)
         imageView.layer.render(in: UIGraphicsGetCurrentContext()!)
@@ -169,7 +175,7 @@ extension UIImage {
     }
     fileprivate func resize(width: CGFloat)-> UIImage {
         let imageView = UIImageView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: width, height: CGFloat(ceil(width/size.width * size.height)))))
-        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        imageView.contentMode = UIView.ContentMode.scaleAspectFit
         imageView.image = self
         UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, false, scale)
         imageView.layer.render(in: UIGraphicsGetCurrentContext()!)
@@ -192,7 +198,8 @@ open class AAImagePickerOptions: NSObject {
     open var rotateCameraImage: CGFloat = 0
     open var resizeValue: CGFloat = 500
     open var resizeType: AAResizer = .none
-    
+    open var presentController: UIViewController?
+
 }
 
 public enum AAResizer {
@@ -205,3 +212,13 @@ public enum AAResizer {
 
 
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+	return input.rawValue
+}

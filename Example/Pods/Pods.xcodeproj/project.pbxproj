@@ -10,6 +10,7 @@
 		2DD50A000289253A9F3E6021F2266EF9 /* Pods-AAImagePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F84E376CAFE6AB8AF7FA24EA51B70914 /* Pods-AAImagePicker_Example-dummy.m */; };
 		3262082A65D5A99DCC7A00FA8191F300 /* Pods-AAImagePicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42CD36030D8FE90D0127180583D3B3E6 /* Pods-AAImagePicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43BBED5FC597884B6EB0360D33FEB55B /* AAImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC06E030AB870B419759269B8126DD19 /* AAImagePicker.swift */; };
+		52A96452224A2773008059A7 /* AAImagePicker+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A96451224A2773008059A7 /* AAImagePicker+Helper.swift */; };
 		5DA36E8FFC7210C800E2A2DDEFEA6ED1 /* AAImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 384095544AF2AED09EF5DAE60BF3DBD1 /* AAImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8ABA546357221A02D930541117A79C9D /* AAImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49253D4FC9FED14BA2CF176CCCEED513 /* AAImagePicker-dummy.m */; };
 		AC197AC1E7AE9C5640EA898E02EB6D14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -38,6 +39,7 @@
 		42CD36030D8FE90D0127180583D3B3E6 /* Pods-AAImagePicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAImagePicker_Example-umbrella.h"; sourceTree = "<group>"; };
 		4533605002DB12AE22A5D4C28F17CB38 /* Pods-AAImagePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAImagePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		49253D4FC9FED14BA2CF176CCCEED513 /* AAImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AAImagePicker-dummy.m"; sourceTree = "<group>"; };
+		52A96451224A2773008059A7 /* AAImagePicker+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AAImagePicker+Helper.swift"; sourceTree = "<group>"; };
 		6FD5E3074C65DE9805EC153C7832A13C /* Pods-AAImagePicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AAImagePicker_Example.modulemap"; sourceTree = "<group>"; };
 		7250FD9B93ECC11726CBB44170DEB0EE /* Pods-AAImagePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAImagePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
 		792DD1B6F632E690C04A300F93A50B72 /* Pods-AAImagePicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AAImagePicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				AC06E030AB870B419759269B8126DD19 /* AAImagePicker.swift */,
+				52A96451224A2773008059A7 /* AAImagePicker+Helper.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ABA546357221A02D930541117A79C9D /* AAImagePicker-dummy.m in Sources */,
+				52A96452224A2773008059A7 /* AAImagePicker+Helper.swift in Sources */,
 				43BBED5FC597884B6EB0360D33FEB55B /* AAImagePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

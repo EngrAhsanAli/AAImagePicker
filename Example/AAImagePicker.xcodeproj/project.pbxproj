@@ -152,7 +152,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 5J29YQGG4K;
+						DevelopmentTeam = 2NSGA2MGXK;
 						LastSwiftMigration = 1010;
 					};
 				};
@@ -377,7 +377,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5J29YQGG4K;
+				DEVELOPMENT_TEAM = 2NSGA2MGXK;
 				INFOPLIST_FILE = AAImagePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -395,7 +395,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5J29YQGG4K;
+				DEVELOPMENT_TEAM = 2NSGA2MGXK;
 				INFOPLIST_FILE = AAImagePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;

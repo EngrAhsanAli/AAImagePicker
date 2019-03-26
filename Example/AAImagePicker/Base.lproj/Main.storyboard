@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,7 +27,7 @@
                                     <constraint firstAttribute="height" constant="50" id="AmD-Gm-DaL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                                <state key="normal" title="Show the picker!">
+                                <state key="normal" title="Show Image picker!">
                                     <color key="titleColor" red="0.95686274510000002" green="0.3555118845370529" blue="0.51930839097605475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -46,6 +45,9 @@
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m3w-TQ-JtY">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="r7w-c6-4Tc"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,16 +62,31 @@
                                     <constraint firstItem="m3w-TQ-JtY" firstAttribute="trailing" secondItem="s0j-kV-fRF" secondAttribute="trailing" id="jpI-Ul-Wci"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ng-7g-T49">
+                                <rect key="frame" x="16" y="336" width="288" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CKm-Hm-Yqo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="Show Video Picker!">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.35551188449999999" blue="0.51930839100000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showVideoPickerAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uWJ-hf-eml"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="anQ-wW-5sX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="7yw-xQ-aXP"/>
                             <constraint firstItem="anQ-wW-5sX" firstAttribute="trailing" secondItem="HaZ-7Y-4Eo" secondAttribute="trailing" id="Bg0-cO-lD5"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="HaZ-7Y-4Eo" secondAttribute="bottom" constant="240" id="CND-wd-Zs0"/>
                             <constraint firstItem="anQ-wW-5sX" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="DEd-FC-FcT"/>
                             <constraint firstItem="anQ-wW-5sX" firstAttribute="leading" secondItem="HaZ-7Y-4Eo" secondAttribute="leading" id="GFI-Ee-UH8"/>
                             <constraint firstItem="anQ-wW-5sX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="L8N-rw-g0H"/>
+                            <constraint firstItem="8ng-7g-T49" firstAttribute="top" secondItem="HaZ-7Y-4Eo" secondAttribute="bottom" constant="8" symbolic="YES" id="MMP-Za-hkQ"/>
                             <constraint firstItem="HaZ-7Y-4Eo" firstAttribute="top" secondItem="anQ-wW-5sX" secondAttribute="bottom" constant="58" id="Z2P-oW-pFT"/>
+                            <constraint firstItem="8ng-7g-T49" firstAttribute="leading" secondItem="HaZ-7Y-4Eo" secondAttribute="leading" id="cNq-JF-5UW"/>
+                            <constraint firstItem="8ng-7g-T49" firstAttribute="trailing" secondItem="HaZ-7Y-4Eo" secondAttribute="trailing" id="kAA-ln-Vpq"/>
                         </constraints>
                     </view>
                     <connections>

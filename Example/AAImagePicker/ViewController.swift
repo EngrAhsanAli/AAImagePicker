@@ -25,14 +25,24 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showVideoPickerAction(_ sender: Any) {
+        let options = AAImagePickerOptions()
+        options.mediaType = .video
+        imagePicker.present (options) { (image, path) in
+            self.imageView.image = image
+            self.imagePicker.setPlayer(URL(string: path!)!)
+            self.imagePicker.playVideo()
+        }
+    }
+    
     @IBAction func showPickerAction(_ sender: Any) {
         
-        
-        imagePicker.present { (image) in
+        let options = AAImagePickerOptions()
+        options.mediaType = .image
+        imagePicker.present (options) { (image, path) in
             self.imageView.image = image
+            print(path)
         }
-
-        
     }
 }
 

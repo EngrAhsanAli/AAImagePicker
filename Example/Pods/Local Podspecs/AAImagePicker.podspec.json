@@ -1,9 +1,9 @@
 {
   "name": "AAImagePicker",
-  "version": "0.1.0",
-  "summary": "A short description of AAImagePicker.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/AAImagePicker",
+  "version": "0.1.2",
+  "summary": "AAImagePicker is a simple & easy-to-use image picker designed to present both camera and photo library options and get the UIImage easily.",
+  "description": "AAImagePicker is a basically a wrapper for `UIImagePickerController` that allows to pick image in a easy way. It is designed to present both camera and photo library options and get the UIImage easily.",
+  "homepage": "https://github.com/EngrAhsanAli/AAImagePicker",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,14 @@
     "Engr. Ahsan Ali": "hafiz.m.ahsan.ali@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/AAImagePicker.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/EngrAhsanAli/AAImagePicker.git",
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"
+  },
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "4.2"
   },
   "source_files": "AAImagePicker/Classes/**/*"
 }

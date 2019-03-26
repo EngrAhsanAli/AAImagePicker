@@ -1,16 +1,16 @@
 PODS:
-  - AAImagePicker (0.1.0)
+  - AAImagePicker (0.1.2)
 
 DEPENDENCIES:
   - AAImagePicker (from `../`)
 
 EXTERNAL SOURCES:
   AAImagePicker:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  AAImagePicker: 228ee737b2eadb3f8e240c5b04e31c08fde304c2
+  AAImagePicker: daadf91eaf73302264d4d5c7d0032d2c17868785
 
-PODFILE CHECKSUM: 209c2e8ad3c561e4f5ae3e7a5f447b38d52a79cd
+PODFILE CHECKSUM: ececbc4256d4980d1966f22c064f28acf2828223
 
-COCOAPODS: 1.2.0.beta.3
+COCOAPODS: 1.5.3

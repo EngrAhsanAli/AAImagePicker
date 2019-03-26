@@ -17,7 +17,7 @@ open class AAImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigatio
         imagePicker.modalPresentationStyle = .overCurrentContext
         if #available(iOS 11.0, *) {
             imagePicker.videoExportPreset = AVAssetExportPresetPassthrough
-            imagePicker.imageExportPreset = .current
+            imagePicker.imageExportPreset = .compatible
         }
         return imagePicker
     }()

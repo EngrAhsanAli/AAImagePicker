@@ -35,7 +35,6 @@ open class AAImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigatio
         guard let root = UIApplication.shared.keyWindow?.rootViewController else {
             fatalError("AAImagePicker - Application key window not found. Please check UIWindow in AppDelegate.")
         }
-        
         return root
     }
         
@@ -59,19 +58,13 @@ open class AAImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigatio
         return alertController
     }
     
-    open func setImagePickerSource(_ sourceType: UIImagePickerController.SourceType) {
+    func setImagePickerSource(_ sourceType: UIImagePickerController.SourceType) {
         guard UIImagePickerController.isSourceTypeAvailable(sourceType) else { return }
         imagePicker.allowsEditing = options.allowsEditing
         imagePicker.sourceType = sourceType
         imagePicker.delegate = self
     }
-    
-    func presentPicker(sourceType: UIImagePickerController.SourceType) {
-        setImagePickerSource(sourceType)
-        setMediaTypes()
-        presentController.present(imagePicker, animated: true, completion: nil)
-    }
-    
+
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
 
         let info = Dictionary(uniqueKeysWithValues: info.map {key, value in (key.rawValue, value)})
@@ -149,6 +142,18 @@ open class AAImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigatio
         }
     }
     
+    open func presentPicker(sourceType: UIImagePickerController.SourceType, _ completion: ((UIImage?, String?) -> Void)? = nil) {
+        setImagePickerSource(sourceType)
+        setMediaTypes()
+        presentController.present(imagePicker, animated: true, completion: nil)
+        
+        if let completion = completion {
+            self.getImage = { image, url in
+                completion(image, url)
+            }
+        }
+    }
+    
     func getVideoThumbnail(_ url: URL) -> UIImage? {
         do {
             let asset = AVURLAsset(url: url , options: nil)
@@ -162,5 +167,3 @@ open class AAImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigatio
         }
     }
 }
-
-

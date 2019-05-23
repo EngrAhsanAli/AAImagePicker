@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		07EFAB67280CBDEA3C12BC9748F2C85D /* AAImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAImagePicker-prefix.pch"; sourceTree = "<group>"; };
-		1AAE493806767DC6480B4785D969B16D /* AAImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AAImagePicker.framework; path = AAImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAE493806767DC6480B4785D969B16D /* AAImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF992371B05361153D2FC2669B3DC73 /* AAImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AAImagePicker.swift; path = AAImagePicker/Classes/AAImagePicker.swift; sourceTree = "<group>"; };
 		1C6B41425FEB2D34DB72BC94DFDCB24A /* Pods-AAImagePicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAImagePicker_Example-resources.sh"; sourceTree = "<group>"; };
 		1CD1A7531A6C726DDA23B8EBDFD49F5F /* Pods-AAImagePicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAImagePicker_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -38,18 +38,18 @@
 		41692FBE0B5304478D2CCED1D938B52C /* Pods-AAImagePicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AAImagePicker_Example.modulemap"; sourceTree = "<group>"; };
 		44DE215303069310F59F5DAE22BAA7B2 /* Pods-AAImagePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAImagePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4C27E84D893FE7F05DC5EDE3EFF9C507 /* Pods-AAImagePicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AAImagePicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8834A99FA00D728D628CA60D8FA67884 /* AAImagePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = AAImagePicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		955620441213D73D1BF54AF53E578D46 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8834A99FA00D728D628CA60D8FA67884 /* AAImagePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = AAImagePicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		955620441213D73D1BF54AF53E578D46 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A38EBDC01C4930D9655A3741EABF6155 /* Pods-AAImagePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAImagePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BAE8552A801EAFF452F32C9DC38BDA5C /* AAImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAImagePicker-umbrella.h"; sourceTree = "<group>"; };
-		D102272AF69CFA8D9B649E0D283480AA /* Pods_AAImagePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AAImagePicker_Example.framework; path = "Pods-AAImagePicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D102272AF69CFA8D9B649E0D283480AA /* Pods_AAImagePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AAImagePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E071F52203B81465D831080CF13413 /* AAImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AAImagePicker.modulemap; sourceTree = "<group>"; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DC190F70F89D5F05C7F2638554A35175 /* AAImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AAImagePicker-dummy.m"; sourceTree = "<group>"; };
 		E1A3745B6990D6A41174C37A2351B4CB /* Pods-AAImagePicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AAImagePicker_Example-dummy.m"; sourceTree = "<group>"; };
 		F3FCB7F4BCACD4C589B9800775EA7870 /* Pods-AAImagePicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AAImagePicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F60872B0A9B6E39E1F5A5FCD3150324A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F60872B0A9B6E39E1F5A5FCD3150324A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F7AB5F23EF40E319C70B7A432DAA7847 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB68B37B56E822AB126464CDD9E88ACA /* AAImagePicker+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AAImagePicker+Helper.swift"; path = "AAImagePicker/Classes/AAImagePicker+Helper.swift"; sourceTree = "<group>"; };
 		FDD39850CF85059C50FE45889B114FCE /* Pods-AAImagePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAImagePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -248,12 +248,18 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					297949352A7B212093CBB7E683658BBB = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -472,7 +478,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -535,8 +541,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -566,7 +571,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

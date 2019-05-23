@@ -30,7 +30,7 @@
 		6241A2987FE8512D6280AF6E /* Pods-AAImagePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAImagePicker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AAImagePicker_Tests/Pods-AAImagePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A355405539FB00141758BFAB /* Pods_AAImagePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AAImagePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA7ABEA4EC14B9184AC2C1C /* Pods-AAImagePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAImagePicker_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AAImagePicker_Example/Pods-AAImagePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C3BE6D69F59C0D00E27B9BA8 /* AAImagePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AAImagePicker.podspec; path = ../AAImagePicker.podspec; sourceTree = "<group>"; };
+		C3BE6D69F59C0D00E27B9BA8 /* AAImagePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AAImagePicker.podspec; path = ../AAImagePicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FD70C5676D4B4BDC80AC9A4E /* Pods-AAImagePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAImagePicker_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AAImagePicker_Example/Pods-AAImagePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,7 +152,7 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 2NSGA2MGXK;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -161,6 +161,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -373,8 +374,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -391,8 +391,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

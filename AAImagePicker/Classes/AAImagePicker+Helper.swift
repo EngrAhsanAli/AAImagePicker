@@ -10,26 +10,35 @@ import AVFoundation
 
 open class AAImagePickerOptions: NSObject {
     
-    open var actionSheetTitle: String = "Choose Option"
-    open var actionSheetMessage: String = "Select an option to pick an image"
-    open var optionCamera = "Camera"
-    open var optionLibrary = "Photo Library"
-    open var optionCancel = "Cancel"
     open var allowsEditing = false
     open var rotateCameraImage: CGFloat = 0
     open var resizeWidth: CGFloat?
     open var resizeScale: CGFloat?
     open var presentController: UIViewController?
-    open var mediaType: AAMediaType = .all
+    
+    open var cancelText = "Cancel"
+    open var chooseFromLibraryText = "Choose From Library"
+    open var chooseFromPhotoRollText = "Choose From Photo Roll"
+    open var takePhotoText = "Take Photo"
+    open var takeVideoText = "Take Video"
+    open var viewPhotoText = "View"
+    
+    open var allowView = true
+    open var allowsPhoto = true
+    open var allowsVideo = true
+    open var allowsTake = true
+    open var allowsSelectFromLibrary = true
+    open var iPadUsesFullScreenCamera = false
+    open var defaultsToFrontCamera = false
+    open var presentingBarButtonItem: UIBarButtonItem? = nil
+    open var presentingView: UIView? = nil
+    open var presentingRect: CGRect? = nil
+    open var presentingTabBar: UITabBar? = nil
 
 }
 
 public enum AAResizer {
     case width, scale
-}
-
-public enum AAMediaType {
-    case image, video, all
 }
 
 extension UIImage {
@@ -118,3 +127,14 @@ extension UIImage {
     
 }
 
+
+
+extension UIApplication {
+    static var keyWindow: UIWindow? {
+        if #available(iOS 13.0, *) {
+            return UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+        } else {
+            return UIApplication.shared.delegate?.window ?? nil
+        }
+    }
+}

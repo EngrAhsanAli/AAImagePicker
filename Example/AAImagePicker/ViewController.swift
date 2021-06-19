@@ -27,22 +27,36 @@ class ViewController: UIViewController {
 
     @IBAction func showVideoPickerAction(_ sender: Any) {
         let options = AAImagePickerOptions()
-        options.mediaType = .video
-        imagePicker.present (options) { (image, path) in
+        options.allowsVideo = true
+        options.allowsPhoto = false
+        imagePicker.didGetVideo = { (image, path) in
             self.imageView.image = image
-            self.imagePicker.setPlayer(URL(string: path!)!)
+            self.imagePicker.setPlayer(path)
             self.imagePicker.playVideo()
         }
+        imagePicker.present(with: options)
     }
     
     @IBAction func showPickerAction(_ sender: Any) {
         
         let options = AAImagePickerOptions()
-        options.mediaType = .image
-        imagePicker.present (options) { (image, path) in
+        options.allowsVideo = false
+        options.allowsPhoto = true
+        imagePicker.viewImageCallback = {
+            
+            guard let image = self.imageView.image else { return }
+            
+            let options = AAImageViewOptions.init(image: image, imageMode: .aspectFill, imageHD: nil, fromView: self.imageView)
+
+            let imageViewer = AAImageViewController(imageInfo: options)
+            self.present(imageViewer, animated: true, completion: nil)
+            
+        }
+        imagePicker.didGetPhoto = { (image, path) in
             self.imageView.image = image
             print(path)
         }
+        imagePicker.present(with: options)
     }
 }
 

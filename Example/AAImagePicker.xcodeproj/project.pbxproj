@@ -195,7 +195,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AAImagePicker_Example/Pods-AAImagePicker_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AAImagePicker_Example/Pods-AAImagePicker_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AAImagePicker/AAImagePicker.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -204,7 +204,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AAImagePicker_Example/Pods-AAImagePicker_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AAImagePicker_Example/Pods-AAImagePicker_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3457B2F0175C3AF8875F5BBE /* [CP] Check Pods Manifest.lock */ = {

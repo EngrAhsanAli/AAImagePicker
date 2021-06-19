@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'AAImagePicker'
-s.version          = '0.1.3'
+s.version          = '0.1.4'
 s.summary          = 'AAImagePicker is a simple & easy-to-use image picker designed to present both camera and photo library options and get the UIImage easily.'
 
 s.description      = <<-DESC
